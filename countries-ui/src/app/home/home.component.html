@@ -1,0 +1,11 @@
+
+<div>
+    <ngx-masonry  [useImagesLoaded]="true" class='carousel-indicators space-of-thumbnail'>
+        <div class="masonry-item"  *ngFor="let country of countries";>
+            <a class="op-7" data-target='#carousel-custom' routerLink="/countries/{{country.name}}" >
+                <img class="width" [src]="country.flag"/>
+            </a>
+        </div>
+    </ngx-masonry>
+</div>
+
